@@ -10,8 +10,6 @@ import {
   bodyGray,
   light,
   gray,
-  darkGray,
-  lightGray,
   silver,
   success,
   warning,
@@ -23,6 +21,14 @@ import {
   RotateIcon,
   primaryTextColor,
   centerBackgroundImage,
+  navy,
+  lightGrayText,
+  green,
+  dark,
+  darkGray,
+  lightGray,
+  teal,
+  tealDark,
 } from 'styles/shared';
 
 export type ThemeType = {
@@ -30,10 +36,15 @@ export type ThemeType = {
   colors: {
     primary: {
       light: string;
-      lightMobile: string;
       dark: string;
-      contrastText: string;
       primaryTextColor: string;
+      navy: string;
+      lightGrayText: string;
+      green: string;
+      darkGray: string;
+      lightGray: string;
+      teal: string;
+      tealDark: string;
     };
     status: {
       success: string;
@@ -48,6 +59,7 @@ export type ThemeType = {
     lightGray: string;
     silver: string;
   };
+  mobile: string;
   utils: {
     centerFlex: string;
     scrollbar: SimpleInterpolation;
@@ -115,11 +127,16 @@ const sharedTheme = {
 const theme: ThemeType = {
   colors: {
     primary: {
-      light: '#FF3100',
-      lightMobile: '#FC5C42',
-      dark: '#3f4254',
-      contrastText: '#f9fafa',
+      light,
+      dark,
       primaryTextColor,
+      navy,
+      lightGrayText,
+      green,
+      darkGray,
+      lightGray,
+      teal,
+      tealDark,
     },
     status: {
       success,
@@ -134,6 +151,8 @@ const theme: ThemeType = {
     lightGray,
     silver,
   },
+  mobile: '(max-width: 500px)',
+
   ...sharedTheme,
 };
 

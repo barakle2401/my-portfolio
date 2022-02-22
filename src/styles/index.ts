@@ -5,9 +5,9 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
-    overflow-y: overlay;
+ 
     scroll-behavior: smooth;
-
+    
     ${({ theme }) => theme.utils.scrollbar};
   }
 
@@ -21,11 +21,9 @@ const GlobalStyle = createGlobalStyle`
   
   body {
     margin: 0;
-    background: #fcfcfc;
+
     height: 100%;
-    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+    font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -48,8 +46,42 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
-
-  
+  .d-flex{
+    display: flex;
+  }
+  .flex-column{
+    flex-direction: column;
+  }
+  .border{
+    border:1px solid red;
+  }
+  .h-100{
+    height:100%;
+  }
+  .align-center{
+    align-items: center;
+  }
+  .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
   `;
 
 export default GlobalStyle;

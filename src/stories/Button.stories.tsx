@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Element from 'components/Button';
+import Element from 'components/common/Button';
 
 const Button = (
   props: Omit<

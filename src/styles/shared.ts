@@ -17,10 +17,20 @@ export const primaryTextColor = '#363636';
 export const bodyGray = '#F7F7F7';
 export const light = '#FFFFFF';
 export const gray = '#adadad';
-export const darkGray = '#e6e6e6';
-export const lightGray = '#EFEFEF';
+// export const darkGray = '#e6e6e6';
+// export const lightGray = '#EFEFEF';
 export const silver = '#A6A6A6';
 export const oliveGreen = '#4E6C54';
+
+// main theme colors
+export const navy = '#0a192f';
+export const dark = '#0B0C10';
+export const darkGray = '#1F2833';
+export const lightGray = '#ccd6f6;';
+export const lightGrayText = '#8892b0;';
+export const teal = '#66FCF1';
+export const tealDark = '#45A29E';
+export const green = '#64ffda';
 
 // notifications colors
 export const success = '#02AD42';
